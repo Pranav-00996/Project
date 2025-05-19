@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Profile</title>
+    </head>
+    <body style="display: block;">
+           <header>
+            <a href="Dashboard.html"><img class="logo" src="2.jpg" alt="logo"></a>
+            <nav>
+                <ul class="list">
+                    <li><a href="Dashboard.html">Dashboard</a></li>
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="AddTransaction.html">Add Transaction</a></li>
+                    <li><a href="TransactionHistory.html">Transaction History</a></li>
+                    <li><a href="SpendingPatterns.html">Spending Patterns</a></li>
+                    <li><a href="Alerts.html">Alerts</a></li>
+
+                </ul>
+                <button style="width: 150px;">Logout</button>
+            </nav>
+        </header>
+        <div style="margin: auto;">
+        <h1 style="text-align: center;">Set Monthly Budget</h1>
+                <form action="">
+                    <label for="SetMonthlyBudget">Set Monthly Budget</label><br>
+                    <input type="number" id="SetMonthlyBudget" name="SetMonthlyBudget" placeholder="Enter amount"><br>
+                    <h1 style="text-align: center;">Reset password</h1>
+                    <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username">
+                <br>
+
+                <label for="Password">Enter Old Password:</label>
+                <input type="password" id="Password" name="Password">
+                <br>
+                <br>
+                <label for="NewPassword">Enter New Password:</label>
+                <input type="password" id="NewPassword" name="NewPassword">
+                <br>
+                <button class="register" type="submit" style="width: 200px;margin-left: 100px;">Reset Password</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+body{
+    display: flex;
+    background-color:rgb(30,30,30);
+    flex-direction: column;
+
+}
+button{
+    border-radius: 10000px;
+}
+.back{
+    color: aqua;
+}
+.back:hover{
+    background-image: linear-gradient(to bottom right , rgb(85, 255, 0),rgb(255, 0, 106) );
+}
+.register{
+    background-color: rgb(0, 255, 234);
+    color: aliceblue;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height:110;
+
+    
+}
+.register:hover{
+   
+    background-color: rgba(36, 237, 237 , 0);
+    color: white;
+    border-radius: 1000px;
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(1, 203, 58), -40px 0 100px rgb(255, 128, 0);
+    width: 120%;
+    height: 120%;
+}
+.register::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    border-radius: 1000px;
+     background-image: linear-gradient(to bottom right , rgb(255, 136, 0),rgb(0, 255, 64) );
+    z-index: -1;
+}
+.login{
+    background-color: rgba(127, 255, 0,1);
+    color: aliceblue;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height:110;
+}
+.login:hover{
+    background-color: rgba(36, 237, 237 , 0);
+    color: white;
+    border-radius: 1000px;
+    z-index: 0;
+    box-shadow: 40px 0 100px purple, -40px 0 100px rgb(4, 182, 241);
+    width: 120%;
+    height: 120%;
+    
+}
+.login::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right , rgb(4, 182, 241),purple );
+    z-index: -1;
+
+}
+
+input{
+    margin: 10px;
+    margin-left: 2px;
+    border-radius:10000px;
+    overflow: hidden;
+}
+label{
+    margin: 10px;
+    ;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.form_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.first{
+    display: block;
+    margin-left:auto ;
+    margin-right: auto;
+    height: 200px;
+    width: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0;
+}
+img.logo{
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-wrap: nowrap;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.list{
+    display: flex;
+    list-style-type:none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+li,a,nav{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.list li a:hover{
+    color: rgb(36, 237, 237);
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(36, 237, 237 , 1);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 110%;
+}
+button::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right , rgb(255, 121, 4),rgb(255, 2, 2) );
+    z-index: -1;
+}
+
+button:hover{
+    background-color: rgba(36, 237, 237 , 0);
+    color: white;
+    border-radius: 1000px;
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(255, 2, 2), -40px 0 100px rgb(251, 90, 4);
+    width: 120%;
+    height: 120%;
+    
+}
+.div1{
+    background-color: rgb(0, 136, 255);
+    width: 70%;
+    height: 40%;
+    margin:auto;
+    border-radius: 1000px;
+    padding: 50px;
+    
+}
+.div1:hover{
+    transition: all 0.3s;
+    width: 90%;
+    height: 90%;
+}
+.div2{
+    background-color: rgb(0, 255, 179);
+    width: 70%;
+    height: auto;
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 1000px;
+    padding: 50px;
+}
+.div2:hover{
+    transition: all 0.3s;
+     width: 90%;
+    height: 90%;
+}
+.div3{
+    background-color: rgb(255, 123, 0);
+    width: 70%;
+    height: 33%;
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 1000px;
+    padding: 50px;
+}
+.div3:hover{
+    transition: all 0.3s;
+     width: 90%;
+    height: 90%;
+}
+input{
+    color: black;
+    padding: 10px;
+}
+option{
+    border-radius: 100000px;
+    padding: 10px;
+    background-color: rgb(34, 255, 0);
+    color: black;
+    margin: 50px;
+}
+select{
+    color: black;
+}
+.New{
+    padding: 9px 25px;
+    background-color: rgb(255, 0, 68);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 110%;
+}
+.New::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right , rgb(255, 0, 68),rgb(0, 255, 174) );
+    z-index: -1;
+}
+.New:hover{
+    background-color: rgba(36, 237, 237 , 0);
+    color: white;
+    border-radius: 1000px;
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(255, 0, 68), -40px 0 100px rgb(0, 255, 174);
+    width: 120%;
+    height: 120%;
+}
+.ExpensePieChart{
+    padding: 9px 25px;
+    background-color: rgba(234, 0, 255, 0.689);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 110%;
+    padding: 50px;
+    margin: 40px;
+}
+.ExpensePieChart::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right , rgb(234, 0, 255),rgba(255, 0, 0, 0.944) );
+    z-index: -1;
+}
+.ExpensePieChart:hover{
+    background-color: rgba(36, 237, 237 , 0);
+    color: white;
+    border-radius: 1000px;
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(234, 0, 255), -40px 0 100px rgb(234, 0, 255);
+    width: 95%;
+    height: 100%;
+}
+.IncomeVSExpense{
+    color: rgb(0, 145, 255);
+    padding: 9px 25px;
+    background-color: rgb(251, 255, 0);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 110%;
+    padding: 50px;
+    margin: 40px;
+}
+.IncomeVSExpense::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right , rgb(251, 255, 0),rgb(0, 64, 255) );
+    z-index: -1;
+}
+.IncomeVSExpense:hover{
+    background-color: rgba(36, 237, 237 , 0);
+    color: rgb(0, 0, 0);
+    border-radius: 1000px;
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(251, 255, 0), -40px 0 100px rgb(0, 64, 255);
+    width: 95%;
+    height: 100%;
+    
+}
+.BudgetUsageChart{
+    padding: 9px 25px;
+    background-color: rgb(255, 0, 68);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    width: 90%;
+    height: 110%;
+    padding: 50px;
+    margin: 40px;
+}
+.BudgetUsageChart::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right , rgb(255, 0, 68),rgb(0, 255, 174) );
+    z-index: -1;
+}
+.BudgetUsageChart:hover{
+    background-color: rgba(36, 237, 237 , 0);
+    color: white;
+    border-radius: 1000px;
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(255, 0, 68), -40px 0 100px rgb(0, 255, 174);
+    width: 95%;
+    height: 100%;
+    
+}

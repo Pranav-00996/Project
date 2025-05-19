@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Add Transaction</title>
+    </head>
+    <body style="display: block;">
+        <header>
+            <a href="Dashboard.html"><img class="logo" src="2.jpg" alt="logo"></a>
+            <nav>
+                <ul class="list">
+                    <li><a href="Dashboard.html">Dashboard</a></li>
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="AddTransaction.html">Add Transaction</a></li>
+                    <li><a href="TransactionHistory.html">Transaction History</a></li>
+                    <li><a href="SpendingPatterns.html">Spending Patterns</a></li>
+                    <li><a href="Alerts.html">Alerts</a></li>
+
+                </ul>
+                <button style="width: 150px;">Logout</button>
+            </nav>
+        </header>
+        <div style="margin-left:100px ;">
+            <h1 style="text-align: center;">Add a Transaction</h1>
+        <form action="">
+                    <label for="TransactionID">Transaction ID: </label><br>
+                    <input type="text" name="TransactionID" id="TransactionID"><br>
+                    <label for="Amount">Amount: </label><br>
+                    <input type="number" name="Amount" id="Amount"><br>
+                    <label for="Date">Date: </label><br>
+                    <input type="date" name="Date" id="Date"><br>
+                    <label for="Description">Description: </label><br>
+                    <input type="text" name="Description" id="Description"><br>
+                    <label for="Type">Type: </label>
+                    <select id="Type" name="Type">
+                        <option value="Income">Income</option>
+                        <option value="Expense">Expense</option>
+                    </select><br>
+                    <label for="Category">Category: </label>
+                    <select id="Category" name="Category">
+                        <option value="Transportation">Transportation</option>
+                        <option value="Housing/Rent">Housing/Rent</option>
+                        <option value="Food">Food</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Education">Education</option>
+                        <option value="Insurance">Insurance</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Personal Care">Personal Care</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
+                    </select>
+                </form>
+                <button type="submit" class="New" style="width: 250px; margin-top: 50px;">Add Transaction</button>
+                </div>
+    </body>
+</html>
